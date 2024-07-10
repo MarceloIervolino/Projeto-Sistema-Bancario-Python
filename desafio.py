@@ -12,7 +12,8 @@ limite = 500
 extrato = ""
 numero_saques = 0
 LIMITE_SAQUES = 3
-
+valor = True
+QTD_LIMITE_SAQUES = 3
 while True:
 
     opcao = input(menu)
@@ -23,7 +24,7 @@ while True:
         if valor > 0:
             saldo += valor
             extrato += f"Depósito: R$ {valor:.2f}\n"
-        elif print(f"Depósito: R$ {valor:.2f}\n" &"Realizado com Sucesso")
+            print(f"Depósito: R$ {valor:.2f} Realizado com Sucesso!!!")
         else:
             print("Operação falhou! O valor informado é inválido.")
 
@@ -49,7 +50,8 @@ while True:
             saldo -= valor
             extrato += f"Saque: R$ {valor:.2f}\n"
             numero_saques += 1
-
+            QTD_LIMITE_SAQUES = LIMITE_SAQUES - numero_saques
+            print(f"Saque: R$ {valor:.2f} Voc~e tem direito a mais {QTD_LIMITE_SAQUES} Saques por hoje!!!")
         else:
             print("Operação falhou! O valor informado é inválido.")
 
