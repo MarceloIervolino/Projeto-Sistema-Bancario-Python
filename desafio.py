@@ -51,7 +51,7 @@ while True:
             extrato += f"Saque: R$ {valor:.2f}\n"
             numero_saques += 1
             QTD_LIMITE_SAQUES = LIMITE_SAQUES - numero_saques
-            print(f"Saque: R$ {valor:.2f} Voc~e tem direito a mais {QTD_LIMITE_SAQUES} Saques por hoje!!!")
+            print(f"Saque: R$ {valor:.2f} Você tem direito a mais {QTD_LIMITE_SAQUES} Saques por hoje!!!")
         else:
             print("Operação falhou! O valor informado é inválido.")
 
